@@ -10,7 +10,7 @@ function Header() {
                 <Link to={"/movies/popular"} >Popular</Link>
                 <Link to={"/movies/top-rated"} >Top Rated</Link>
                 <Link to={"/movies/upcoming"} className="header--left-last">Upcoming</Link>
-                <Link to={"/signup"} ><span class="material-symbols-outlined user--icon">
+                <Link to={"/signup"} ><span className="material-symbols-outlined user--icon">
                     account_circle
                 </span>
                 </Link>

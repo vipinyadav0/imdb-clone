@@ -3,7 +3,7 @@ import "../Pages/Home.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from "react-router-dom";
-// import MovieList from "../../components/movieList/movieList";
+import MovieList from "../components/movieList/MovieList";
 
 const Home = () => {
 
@@ -27,7 +27,7 @@ const Home = () => {
                 >
                     {
                         popularMovies.map(movie => (
-                            <Link style={{ textDecoration: "none", color: "white" }} to={`/movie/${movie.id}`} >
+                            <Link style={{ textDecoration: "none", color: "white" }} to={`/movie/${movie.id}`} key={movie.id}>
                                 <div className="posterImage">
                                     <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
                                 </div>
@@ -46,7 +46,7 @@ const Home = () => {
                         ))
                     }
                 </Carousel>
-                {/* <MovieList /> */}
+                <MovieList />
             </div>
         </>
     )
