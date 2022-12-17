@@ -35,6 +35,8 @@
 
 
 .header--icon {
+    margin-left: 2rem;
+    margin-top: 1rem;
     height: 70px;
     width: 110px;
 }

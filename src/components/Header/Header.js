@@ -8,7 +8,7 @@ function Header() {
             <div className='header--left'>
                 <Link to="/"><img className="header--icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" /> </Link>
                 <Link to={"/movies/popular"} >Popular</Link>
-                <Link to={"/movies/top-rated"} >Top Rated</Link>
+                <Link to={"/movies/top_rated"} >Top Rated</Link>
                 <Link to={"/movies/upcoming"} className="header--left-last">Upcoming</Link>
                 <Link to={"/signup"} ><span className="material-symbols-outlined user--icon">
                     account_circle
